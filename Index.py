@@ -1,15 +1,13 @@
-import discord
+from discord.ext.commands import Bot
+
 from Token import TokenDiscord
-from Commands import Commands
-from datetime import datetime
 
 tokenDiscord = TokenDiscord()
-commands = Commands()
-timeNow = datetime.now()
 
-class MyClient(discord.Client):
-    async def on_ready(self):
-        print(f'Logged on as {self.user}!')
+bot = Bot(command_prefix="<3", help_command=None)
 
-client = MyClient()
-client.run(tokenDiscord.uploadToken()['token'])
+@bot.event
+async def on_ready(self):
+    print(f'Logged on as {self.user}!')
+
+bot.run(tokenDiscord.uploadToken()['token'])
