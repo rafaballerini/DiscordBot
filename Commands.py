@@ -61,3 +61,8 @@ Força!! :muscle::wink: ''')
             await ctx.send("Esse comando não existe! :alien:")
         else:
             raise error
+
+
+def setup(bot):
+    cog = Commands()
+    bot.add_cog(cog)

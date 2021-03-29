@@ -10,4 +10,6 @@ bot = Bot(command_prefix="<3", help_command=None)
 async def on_ready(self):
     print(f'Logged on as {self.user}!')
 
+bot.load_extension("Commands")
+
 bot.run(tokenDiscord.uploadToken()['token'])
