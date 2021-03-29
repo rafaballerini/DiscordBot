@@ -1,9 +1,11 @@
 import discord
 from Token import TokenDiscord
 from Commands import Commands
+from datetime import datetime
 
 tokenDiscord = TokenDiscord()
 commands = Commands()
+timeNow = datetime.now()
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -26,6 +28,13 @@ class MyClient(discord.Client):
             try:
                 if message.content == '<3reflexao':
                     await message.channel.send(commands.reflection()) 
+                elif message.content == '<3jairo':
+                    if timeNow.hour < 12 and timeNow.hour >= 6:
+                        await message.channel.send(commands.morning())
+                    elif timeNow.hour >= 12 and timeNow.hour < 19:
+                        await message.channel.send(commands.afternoon())
+                    else:
+                        await message.channel.send(commands.night())   
                 else:
                     await message.channel.send(commands.commands()[message.content])  
             except:
