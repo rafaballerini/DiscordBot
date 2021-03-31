@@ -98,7 +98,7 @@ responseData = collection.update_one({'nome': 'Mateus'}, {'$inc': {'idade': 2}},
 * Para arrays:
   * $: atualiza o primeiro que encontrar na condição
   * $[]: atualiza todos os elementos encontrados
-  * $[<identifiers>]: atualiza todos que combinarem com a condição dentro do parênteses
+  * $[\<identifiers\>]: atualiza todos que combinarem com a condição dentro do parênteses
 
 [Infos sobre Update Operators](https://docs.mongodb.com/manual/reference/operator/update/#std-label-update-operators)
 
