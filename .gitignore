@@ -1,3 +1,6 @@
 Token.py
 BadWords.txt
+BadEmojis.txt
+NiceEmojis.txt
 /__pycache__
+*.cpython-38.pyc

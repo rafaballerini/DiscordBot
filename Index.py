@@ -1,44 +1,47 @@
 import discord
-from Token import TokenDiscord
-from Commands import Commands
-from datetime import datetime
+import difflib
+from Data.Token import TokenDiscord
+from Classes.Commands import Commands
+from Classes.Reaction import Reaction
 
 tokenDiscord = TokenDiscord()
 commands = Commands()
-timeNow = datetime.now()
+reaction = Reaction()
+channelId = tokenDiscord.uploadToken()['idstalker']
+palavras = open('Data/BadWords.txt', 'r').read().lower().split('\n')
 
 class MyClient(discord.Client):
     async def on_ready(self):
         print(f'Logged on as {self.user}!')
 
-    async def on_message(self, message):
-        #channelId=tokenDiscord.uploadToken()['idstalker']
-        if message.author.bot:
+    async def on_raw_reaction_add(self, event):
+        reaction.channel_reaction(event)
+
+    async def on_message(self, event):
+        event.content = event.content.lower()
+        if event.author.bot:
             return
 
-        # for palavra in palavras.split(palavras, ','):
-        #     if message.content.find(palavra) != -1 :
-        #         #await message.delete()
-        #         print(f'deletar mensagem {message.content}')
+        for mensagem in event.content.split():
+            if mensagem in palavras:
+                if event.content.find('gado') != -1 or event.content.find('gados') != -1:
+                    await event.channel.send(f'{event.author.mention} falou: {event.content.replace("gados", "gostosos").replace("gado", "gostoso")}')
+                await event.delete()
 
         #channel = self.get_channel(channelId)
-        #await channel.send(f'Canal {message.channel.mention} enviada por {message.author.mention}: {message.content}')
+        #await channel.send(f'Canal {event.channel.mention} enviada por {event.author.mention}: {event.content}')
 
-        if message.content.startswith('<3'):
+        if event.content.startswith('<3'):
             try:
-                if message.content == '<3reflexao':
-                    await message.channel.send(commands.reflection()) 
-                elif message.content == '<3jairo':
-                    if timeNow.hour < 12 and timeNow.hour >= 6:
-                        await message.channel.send(commands.morning())
-                    elif timeNow.hour >= 12 and timeNow.hour < 19:
-                        await message.channel.send(commands.afternoon())
-                    else:
-                        await message.channel.send(commands.night())   
+                if event.content == '<3reflexao':
+                    await event.channel.send(commands.reflection()) 
+                elif event.content == '<3jairo':
+                    await event.channel.send(commands.salutation())
                 else:
-                    await message.channel.send(commands.commands()[message.content])  
+                    await event.channel.send(commands.commands()[event.content])  
+                await event.delete()
             except:
-                await message.channel.send(commands.commands()['erro'])
+                await event.channel.send(commands.commands()['erro'])
 
 client = MyClient()
 client.run(tokenDiscord.uploadToken()['token'])
