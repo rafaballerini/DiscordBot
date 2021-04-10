@@ -37,11 +37,20 @@ class MyClient(discord.Client):
                     await event.channel.send(commands.reflection()) 
                 elif event.content == '<3jairo':
                     await event.channel.send(commands.salutation())
+                elif event.content == '<3help':
+                    embed = discord.Embed()
+                    embed.add_field(name="<3jairo", value="Saudações do Jairo")
+                    embed.add_field(name="<3reflexao", value="Uma reflexão para animar seu dia")
+                    for key in commands.commands().keys():
+                        if key != 'erro':
+                            embed.add_field(name = key, value = commands.commands()[key], inline = False)
+                    await event.channel.send(embed = embed)
                 else:
                     await event.channel.send(commands.commands()[event.content])  
                 await event.delete()
-            except:
+            except Exception as e:
                 await event.channel.send(commands.commands()['erro'])
+                print(e)
 
 client = MyClient()
 client.run(tokenDiscord.uploadToken()['token'])

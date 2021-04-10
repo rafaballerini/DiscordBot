@@ -35,10 +35,12 @@ Temos vários sentidos para se retirar dessa máxima, mas o final é o que impor
         return {
             '<3rafa': 'oh disus',
             '<3matan': 'Pergunte-me o que quiser, que eu te darei a resposta',
-            '<3arthur': 'Vou comer vidro e chorar no banho dps dessa....:smiling_face_with_tear:',
+            '<3arthur': 'Vou comer vidro e chorar no banho dps dessa... :smiling_face_with_tear:',
             '<3ander': 'Boa cxr, ce merece',
             '<3kyle': f'E vamos pro off topic , esse chat ficou totalmente desvirtuado',
             '<3agua': '--> Bebam Água <--', 
             '<3joelzin': 'https://tenor.com/view/tohru-dragonmaid-anime-gif-9656401',
+            '<3kaway': 'A vida é uma folha em branco, e eu não tenho uma caneta',
+            '<3gentil': 'Gentileza gera gentileza',
             'erro': 'Esse comando não existe! :alien: '
         }
