@@ -42,5 +42,13 @@ Temos vários sentidos para se retirar dessa máxima, mas o final é o que impor
             '<3joelzin': 'https://tenor.com/view/tohru-dragonmaid-anime-gif-9656401',
             '<3kaway': 'A vida é uma folha em branco, e eu não tenho uma caneta',
             '<3gentil': 'Gentileza gera gentileza',
+            '<3alura': 'Desconto da Rafa na Alura para você: https://www.alura.com.br/promocao/rafaballerini',
+            '<3redes' : 'Redes sociais da Rafa: https://beacons.ai/rafaballerini',
+            '<3instagram' : 'Siga a Rafa no instagram: https://instagram.com/rafaballerini',
+            '<3youtube' : 'Se inscreva no canal da Rafa: https://youtube.com/RafaellaBallerini',
+            '<3twitter' : 'Siga a Rafa no twitter: https://twitter.com/ballerinirafa',
+            '<3github' : 'Veja o github da Rafa: https://github.com/rafaballerini',
+            '<3org' : 'Nossa organização no Github: https://github.com/Ballerini-Server',
+            '<3playlist' : 'Ouça a playlist de Rock da Rafa: https://open.spotify.com/embed/playlist/5TUxgTIxzLbLVh7RUf9V8i',
             'erro': 'Esse comando não existe! :alien: '
         }

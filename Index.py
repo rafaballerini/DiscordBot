@@ -35,11 +35,11 @@ class MyClient(discord.Client):
             try:
                 if event.content == '<3reflexao':
                     await event.channel.send(commands.reflection()) 
-                elif event.content == '<3jairo':
+                elif event.content == '<3oi':
                     await event.channel.send(commands.salutation())
                 elif event.content == '<3help':
                     embed = discord.Embed()
-                    embed.add_field(name="<3jairo", value="Saudações do Jairo")
+                    embed.add_field(name="<3oi", value="Saudação")
                     embed.add_field(name="<3reflexao", value="Uma reflexão para animar seu dia")
                     for key in commands.commands().keys():
                         if key != 'erro':
