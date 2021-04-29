@@ -51,5 +51,5 @@ Temos vários sentidos para se retirar dessa máxima, mas o final é o que impor
             '<3github' : 'Veja o github da Rafa: https://github.com/rafaballerini',
             '<3org' : 'Nossa organização no Github: https://github.com/Ballerini-Server',
             '<3playlist' : 'Ouça a playlist de Rock da Rafa: https://open.spotify.com/embed/playlist/5TUxgTIxzLbLVh7RUf9V8i',
-            'erro': 'Esse comando não existe! :alien: Utilize <3help para ver as opções'
+            'erro': 'Esse comando não existe! :alien: Utilize "<3help" para ver as opções'
         }
