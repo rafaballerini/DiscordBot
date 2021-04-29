@@ -42,6 +42,7 @@ Temos vários sentidos para se retirar dessa máxima, mas o final é o que impor
             '<3joelzin': 'https://tenor.com/view/tohru-dragonmaid-anime-gif-9656401',
             '<3kaway': 'A vida é uma folha em branco, e eu não tenho uma caneta',
             '<3gentil': 'Gentileza gera gentileza',
+            '<3dev': 'Bem vindo(a) ao mundo da programação, daqui pra frente é só pra baixo',
             '<3alura': 'Desconto da Rafa na Alura para você: https://www.alura.com.br/promocao/rafaballerini',
             '<3redes' : 'Redes sociais da Rafa: https://beacons.ai/rafaballerini',
             '<3instagram' : 'Siga a Rafa no instagram: https://instagram.com/rafaballerini',
