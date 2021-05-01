@@ -3,6 +3,7 @@ import difflib
 from Data.Token import TokenDiscord
 from Classes.Commands import Commands
 from Classes.Reaction import Reaction
+from discord.ext import command
 
 tokenDiscord = TokenDiscord()
 commands = Commands()
@@ -12,6 +13,7 @@ palavras = open('Data/BadWords.txt', 'r').read().lower().split('\n')
 
 class MyClient(discord.Client):
     async def on_ready(self):
+        await self.change_presence(activity=discord.Game(name="Lolzinho 😪"))
         print(f'Logged on as {self.user}!')
 
     async def on_raw_reaction_add(self, event):
@@ -52,5 +54,5 @@ class MyClient(discord.Client):
                 await event.channel.send(commands.commands()['erro'])
                 print(e)
 
-client = MyClient()
+client = MyClient(Status = 'dnd')
 client.run(tokenDiscord.uploadToken()['token'])
