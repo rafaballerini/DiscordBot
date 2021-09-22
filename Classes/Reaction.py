@@ -8,7 +8,6 @@ bad_emojis = open('Data/BadEmojis.txt', 'r').read().split('\n')
 
 id_apresentacao = tokenDiscord.uploadToken()['idapresentacao']
 id_aviso = tokenDiscord.uploadToken()['idaviso']
-
 class Reaction:
 
     def channel_reaction(self, event):
