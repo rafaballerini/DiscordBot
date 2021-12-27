@@ -11,7 +11,7 @@ Esse é um projeto para criar o próprio bot de discord para o servidor da Rafel
 Confome desenvolvemos o projeto, atualizar quais tecnologias estamos utilizando
 
 * [Python](https://www.python.org/): Linguagem de programação de sintaxe simples;
-* [Mongodb](https://www.mongodb.com/): Bando de dados não relacional para armazenamento de informações, está sendo utilizado o banco diretamente no site;
+* [Mongodb](https://www.mongodb.com/): Banco de dados não relacional para armazenamento de informações, está sendo utilizado o banco diretamente no site;
 * [Discord Developer Portal](https://discord.com/developers/applications): site para registrar sua aplicação/bot;
 * [Discord.py](https://discordpy.readthedocs.io/en/latest/): Biblioteca para integração com o discord;
 
