@@ -6,7 +6,7 @@ timeNow = datetime.now()
 class Commands:
 
     def reflection(self):
-        reflexoes = ['''Já é outro dia e você ainda está com o mesmo problema? Está desnimado, cansado pensando em largar tudo e vender coco na praia?
+        reflexoes = ['''Já é outro dia e você ainda está com o mesmo problema? Está desanimado, cansado pensando em largar tudo e vender coco na praia?
 Lembre-se do caminho que trilhou até chegar aqui e quantos problemas já venceu..
 O problema que está passando é só mais um degrau, e depende de você utrapassa-lo ou evitá-lo.
 Força!! :muscle::wink: ''',
