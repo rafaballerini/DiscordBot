@@ -15,7 +15,7 @@ Temos vários sentidos para se retirar dessa máxima, mas o final é o que impor
         return random.choice(reflexoes)
 
     def morning(self):
-        return '''Bom dia'''
+        return '''Bo dia'''
     
     def afternoon(self):
         return '''Boa tarde'''
