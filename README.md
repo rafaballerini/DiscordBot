@@ -110,3 +110,5 @@ responseData = collection.update_many(
 # procura todo lugar onde valor é igual a 10, e altera/adiciona o campo teste2 = novo
 ```
 [Infos sobre UpdateResult](https://pymongo.readthedocs.io/en/stable/api/pymongo/results.html#pymongo.results.UpdateResult)
+
+so testando um pull request msm!
